@@ -63,17 +63,16 @@ footer {
 }
 
 /* Responsive menu navigation */
-@media screen and (min-width: 766px) {
-  .mobile-nav-hidden {
-    display: none !important;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .desktop-nav-hidden {
     display: none !important;
   }
   .mobile-nav-hidden a {
     display: block !important;
+  }
+}
+@media screen and (min-width: 766px) {
+  .mobile-nav-hidden {
+    display: none !important;
   }
 }
