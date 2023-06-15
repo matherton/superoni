@@ -27,13 +27,22 @@
                 <li><a href="faqs.htm">FAQs</a></li>
               </ul>
               <div class="dropdown_menu mobile-nav-hidden">
-                <a href="contact.htm">Contact</a>
+                <img
+                  src="./img/menu.svg"
+                  alt="hamburger"
+                  color="#fff"
+                  width="24"
+                  height="24"
+                  onclick="toggleMenu()"
+                />
+                <div class="navToggle">navToggle</div>
+                <!-- <a href="contact.htm">Contact</a>
                 <a href="about.htm">About</a>
                 <a href="terms.htm">Terms and Conditions</a>
                 <a href="shop.htm">Shop Products</a>
                 <a href="suppliers.htm">Suppliers</a>
                 <a href="delivery.htm">Delivery</a>
-                <a href="faqs.htm">FAQs</a>
+                <a href="faqs.htm">FAQs</a> -->
               </div>
             </td>
           </tr>
@@ -68,5 +77,10 @@
         <a href="http://insightinternet.co.uk">Insight Internet</a>
       </div>
     </footer>
+    <script type="text/javascript">
+      function toggleMenu() {
+        document.querySelector(".navToggle").classList.toggle("active");
+      }
+    </script>
   </body>
 </html>

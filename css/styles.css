@@ -62,6 +62,12 @@ footer {
   padding-top: 35px;
 }
 
+.navToggle {
+  display: none;
+}
+.navToggle.active {
+  display: block;
+}
 /* Responsive menu navigation */
 @media screen and (max-width: 767px) {
   .desktop-nav-hidden {
