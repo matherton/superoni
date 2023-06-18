@@ -63,16 +63,26 @@ footer {
 }
 
 .navToggle {
-  display: none;
+  transform: translateX(
+    300px
+  ); /* the element is transposed 300px to the left of where it's supposed to be */
+  transition: transform 1s ease-in-out, visibility 1s;
+  visibility: hidden;
   position: absolute;
   top: 3rem;
   background-color: #2196f3;
   text-align: center;
   padding: 1rem;
   border-radius: 0.5rem;
+  transition: all 0.3s ease;
 }
 .navToggle.active {
-  display: block;
+  /* TODO: fade in mobile menu from top */
+  transform: translateX(
+    0px
+  ); /* the element is returned to where it's supposed to be */
+  transition: transform 1s ease-in-out, visibility 1s;
+  visibility: visible;
 }
 /* Responsive menu navigation */
 @media screen and (max-width: 767px) {
