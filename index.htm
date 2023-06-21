@@ -15,9 +15,18 @@
       <div class="mui-container">
         <table>
           <tr class="mui--appbar-height">
-            <td class="mui--text-title"><a href="index.htm">Superoni</a></td>
+            <td class="mui--text-title">
+              <a href="index.htm">Superoni</a
+              ><img
+                src="./img/meat.png"
+                alt="meat"
+                style="position: absolute; margin-left: 0.25rem"
+                width="75px"
+                height="auto"
+              />
+            </td>
             <td class="mui--text-right">
-              <ul class="mui-list--inline mui--text-body2">
+              <ul class="mui-list--inline mui--text-body2 desktop-nav-hidden">
                 <li><a href="contact.htm">Contact</a></li>
                 <li><a href="about.htm">About</a></li>
                 <li><a href="terms.htm">Terms and Conditions</a></li>
@@ -26,6 +35,25 @@
                 <li><a href="delivery.htm">Delivery</a></li>
                 <li><a href="faqs.htm">FAQs</a></li>
               </ul>
+              <div class="dropdown_menu mobile-nav-hidden">
+                <img
+                  src="./img/menu.svg"
+                  alt="hamburger"
+                  width="24"
+                  height="24"
+                  onclick="toggleMenu()"
+                  id="menuIcon"
+                />
+                <div class="navToggle">
+                  <a href="contact.htm">Contact</a>
+                  <a href="about.htm">About</a>
+                  <a href="terms.htm">Terms and Conditions</a>
+                  <a href="shop.htm">Shop Products</a>
+                  <a href="suppliers.htm">Suppliers</a>
+                  <a href="delivery.htm">Delivery</a>
+                  <a href="faqs.htm">FAQs</a>
+                </div>
+              </div>
             </td>
           </tr>
         </table>
@@ -59,5 +87,6 @@
         <a href="http://insightinternet.co.uk">Insight Internet</a>
       </div>
     </footer>
+    <script type="text/javascript" src="js/functions.js"></script>
   </body>
 </html>

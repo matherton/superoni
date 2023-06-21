@@ -61,3 +61,39 @@ footer {
   border-top: 1px solid #e0e0e0;
   padding-top: 35px;
 }
+
+.navToggle {
+  transform: translateY(
+    -300px
+  ); /* the element is transposed 300px to the left of where it's supposed to be */
+  transition: transform 0s ease-in-out, visibility 0s;
+  visibility: hidden;
+  position: absolute;
+  top: 3rem;
+  background-color: #2196f3;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+.navToggle.active {
+  transform: translateY(
+    0px
+  ); /* the element is returned to where it's supposed to be */
+  transition: transform 0.5s ease-in-out, visibility 0s;
+  visibility: visible;
+}
+/* Responsive menu navigation */
+@media screen and (max-width: 767px) {
+  .desktop-nav-hidden {
+    display: none !important;
+  }
+  .mobile-nav-hidden a {
+    display: block !important;
+  }
+}
+@media screen and (min-width: 766px) {
+  .mobile-nav-hidden {
+    display: none !important;
+  }
+}
