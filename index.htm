@@ -40,7 +40,7 @@
                   width="24"
                   height="24"
                   onclick="toggleMenu()"
-                  id="test"
+                  id="menuIcon"
                 />
                 <div class="navToggle">
                   <a href="contact.htm">Contact</a>
@@ -92,22 +92,20 @@
       function toggleMenu() {
         const navToggle = document.querySelector(".navToggle");
         navToggle.classList.toggle("active");
-        /*change the svg img src
-        let svgAction = document.querySelector(".mobile-nav-hidden img").src;
-        svgAction = "./img/close.svg";*/
-        let img1 = "./img/menu.svg",
-          img2 = "./img/close.svg";
-        let imgElement = document.getElementById("test");
-        imgElement.src = img1 ? img2 : img1;
-      }
-      function changeImg() {
-        let img1 = "./img/menu.svg",
-          img2 = "./img/close.svg";
-        let imgElement = document.getElementById("test");
-        imgElement.src = imgElement.src === img1 ? img2 : img1;
-        //TODO make the toggle of svg change img src work instead of just replacing it once
-        //imgElement.src = imgElement.src === img1 ? img2 : img1;
-        //source: https://jsfiddle.net/guspersson/s8qLg7ur/
+        /**
+         * Changes the source of an image element with ID "menuIcon"
+         * based on the current source file.
+         * If the current source file is "./img/menu.svg", it changes it to "./img/close.svg".
+         * If the current source file is "./img/close.svg", it changes it to "./img/menu.svg".
+         */
+        const menuIcon = document.getElementById("menuIcon");
+        const currentSrc = menuIcon.src;
+
+        if (currentSrc.endsWith("menu.svg")) {
+          menuIcon.src = "./img/close.svg";
+        } else if (currentSrc.endsWith("close.svg")) {
+          menuIcon.src = "./img/menu.svg";
+        }
       }
     </script>
   </body>
