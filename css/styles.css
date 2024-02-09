@@ -51,6 +51,28 @@ header table {
   padding-bottom: 100px;
 }
 
+.mui--text a {
+  text-decoration: none;
+}
+
+.mui--text.center {
+  text-align: center;
+}
+
+.mui--text a h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 3.35rem;
+}
+
+.mui--text a sup {
+  font-size: 0.8rem;
+}
+
+.mui--text a sup span {
+  margin-right: 0.5rem;
+}
+
 .vid-placeholder {
   background-color: #eee;
   padding: 5rem 9rem;
@@ -75,7 +97,7 @@ footer {
   transition: transform 0s ease-in-out, visibility 0s;
   visibility: hidden;
   position: absolute;
-  top: 3rem;
+  top: 5rem;
   background-color: #2196f3;
   text-align: center;
   padding: 1rem;
@@ -90,7 +112,7 @@ footer {
   visibility: visible;
 }
 /* Responsive menu navigation */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
   .desktop-nav-hidden {
     display: none !important;
   }
@@ -98,7 +120,7 @@ footer {
     display: block !important;
   }
 }
-@media screen and (min-width: 766px) {
+@media screen and (min-width: 1199px) {
   .mobile-nav-hidden {
     display: none !important;
   }
