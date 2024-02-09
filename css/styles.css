@@ -51,6 +51,12 @@ header table {
   padding-bottom: 100px;
 }
 
+.vid-placeholder {
+  background-color: #eee;
+  padding: 5rem 9rem;
+  border-radius: 0.5rem;
+}
+
 /**
   * Footer CSS
   */
