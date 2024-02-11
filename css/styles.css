@@ -67,6 +67,7 @@ header table {
 
 .mui--text a sup {
   font-size: 0.8rem;
+  padding-left: 0.5em;
 }
 
 .mui--text a sup span {
