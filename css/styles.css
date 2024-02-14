@@ -88,6 +88,11 @@ header table {
   justify-content: center;
 }
 
+.Parent .card-image {
+  width: 100%;
+  height: auto;
+}
+
 .child1 {
   width: 50%;
 }
