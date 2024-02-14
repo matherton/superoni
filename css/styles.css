@@ -80,6 +80,26 @@ header table {
   border-radius: 0.5rem;
 }
 
+/** flex card styles **/
+.Parent {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.child1 {
+  width: 50%;
+}
+
+.child2 {
+  width: 50%;
+}
+
+.subHeader {
+  font-size: 1.5rem;
+}
+
 /**
   * Footer CSS
   */
