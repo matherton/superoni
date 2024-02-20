@@ -141,7 +141,7 @@ footer {
   visibility: visible;
 }
 /* Responsive menu navigation */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 990px) {
   .desktop-nav-hidden {
     display: none !important;
   }
@@ -149,7 +149,7 @@ footer {
     display: block !important;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 989px) {
   .mobile-nav-hidden {
     display: none !important;
   }
