@@ -39,6 +39,10 @@ header table {
   width: 100%;
 }
 
+header .desktop-spacer {
+  width: auto;
+}
+
 /**
   * Content CSS
   */
@@ -141,7 +145,7 @@ footer {
   visibility: visible;
 }
 /* Responsive menu navigation */
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 989px) {
   .desktop-nav-hidden {
     display: none !important;
   }
@@ -149,8 +153,12 @@ footer {
     display: block !important;
   }
 }
-@media screen and (min-width: 989px) {
+/* desktop breakpoint */
+@media screen and (min-width: 990px) {
   .mobile-nav-hidden {
     display: none !important;
+  }
+  .desktop-spacer {
+    min-width: 8rem;
   }
 }
